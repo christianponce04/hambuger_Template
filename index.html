@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hamburger Templates</title>
+</head>
+<style type="text/css">
+	html , body{ 		
+		padding: 0;
+		margin: 0;
+	}
+	a{
+		text-decoration: none;
+		color: black;
+		letter-spacing: 3px;
+		padding: 8px 16px;
+		font-size: 17px;
+	}
+	/*Navigation*/
+	
+	.nav .navigation {
+		width: 100%;
+		font-family: sans-serif;
+		background-color: #fff;
+		min-height: 60px;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+		position: fixed;
+		z-index:1000;
+	}
+	.nav .navigation ul{
+		float: right;
+		padding: 0;
+		margin-top: 18px;
+	}
+	.nav .navigation ul li{
+		display: inline;
+		list-style: none;
+	}
+	.nav .navigation ul li a:hover , .logo:hover{
+		color:#fff;
+		background-color:lightgrey;
+		transition: 0.4s;
+	}
+	.navigation .logo{
+		position: absolute;
+		top: 10px;
+		font-size: 20px;
+		padding: 8px 16px;
+	}
+	/*End -Navigation*/
+	.section-one img{
+		max-width: 100%;
+		height: auto;
+	}
+	.section-one h1{
+		position: absolute;
+		top: 80%;
+		left: 3%;
+		letter-spacing: 4px;
+		opacity: 0.60;
+		font-weight:lighter;
+		font-size: 35px;
+	}
+	/*About */
+	.section-two{
+	width: 100%;
+	margin: 70px 0;
+}
+.about-wrapper{
+	width: 78%;
+	margin: auto;
+	overflow: auto;
+}
+.about-wrapper .about-image{
+	float: left;
+}
+.about-wrapper .about-image img{
+	border-radius: 5px;
+	width: 80%;
+
+}
+
+.about-wrapper .about h1{
+	text-align: center;
+	font-weight: lighter;
+	font-size: 36px;
+	margin: 10px 0;
+	letter-spacing: 4px;
+}
+.about-wrapper .about h3{
+	text-align: center;
+	font-weight: lighter;
+	letter-spacing: 4px;	
+	margin: 40px 0;
+}
+.about-wrapper .about p{
+	margin: 18px 0;
+	font-family: serif;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.about-wrapper .about p span{
+	background-color: lightgrey;
+	padding:  0 8px;
+}
+p.opacity{
+	opacity: 0.60;
+}
+hr{
+	width: 78%;
+	margin: auto;
+	margin-top: 100px;
+}
+/*End-About*/
+
+/*Menu*/
+.section-three{
+	margin: 70px 0;
+	height: auto;
+	width: 100%;
+}
+.menu {
+	width: 78%;
+	margin: auto;
+}
+.menu .menu-content{
+	float: left;	
+	height: 800px;
+}
+.menu .menu-image img{
+	max-width: 100%;
+	height: 700px;
+	border-radius:5px;
+	width: 500px;
+	float: right;
+	opacity: 0.70;
+}
+.menu h1{
+	text-align: center;
+	font-weight: lighter;
+	letter-spacing: 4px;
+	font-size: 35px;
+	padding-left:  20px;
+}
+.menu h3{
+	letter-spacing: 4px;
+	font-weight: lighter;
+	margin: 30px 0;
+}
+.menu p{
+	opacity: 0.60;
+}
+/*End-Menu*/
+/*Contact Us*/
+.section-four{
+	margin-bottom: 70px;
+}
+.contact{
+	width: 78%;
+	margin: auto;
+}
+form{
+	width: 100%;
+}
+input{
+	display: block;
+	padding: 16px 8px;
+	width: 100%;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 1px solid #ccc;
+}
+button{
+	padding: 8px 16px;
+	border:none;
+	margin: 16px 0;
+	font-size: 15px;
+	font-family: sans-serif;
+	cursor: pointer;
+}
+button:hover{
+	transition: 0.2s;
+	color: #000;
+	background-color: lightgrey;
+}
+.contact-content h1{
+	letter-spacing: 5px;
+	font-weight: lighter;
+	margin: 10px;
+	padding: 0;
+	font-size: 36px;
+}
+.contact-content p{
+	margin: 10px 0;
+	padding: 10px;
+}
+.contact-content p span{
+	color: #607d8b;
+	margin: px 0;
+	font-weight: bolder;
+}
+/*footer*/
+.footer{
+	background-color:  #f1f1f1;
+	width: 100%;
+	height: 50px;
+	color:  #000;
+	padding: 32px 0;
+}
+.content-footer p{
+	text-align: center;
+}
+
+@media (max-width: 560px){
+	ul{
+		display: none;
+	}
+	.section-one h1{
+		font-size: 35px;
+		top: 70%;
+	}
+	.about-wrapper .about-image img{
+		display: none;
+	}
+	.menu .menu-content{
+		width: 100%;
+		height: 600px;
+	}
+}
+</style>
+<body>
+	<div class="main">
+
+		<div class="nav">
+			<div class="navigation">
+				<div class="logo">
+				<a href="#home">Gournet au Catering</a>
+				</div>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			</div>
+
+		<div class="section-one" id="home">
+				<img src="img/hamburger.jpg" alt="hamburger">
+				<h1>Le Catering</h1>	
+		</div>
+		</div>
+		<div class="section-two">
+		   <div class="about-wrapper">
+				<div class="about-image">
+					<img src="img/tablesetting2.jpg" alt="tablesetting2" >
+				</div>
+			<div class="about" id="about">
+				<h1>About Catering</h1>
+				<h3>Tradition since 1889</h3>
+				<p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span>seasonal</span> ingredients.</p>
+				<p class="opacity">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			</div>
+		</div>
+		<hr>
+		<div class="section-three" id="menu">
+			<div class="menu" >
+				<div class="menu-content" >
+					<h1 >Our Menu</h1>
+					<h3>Bread Basket</h3>
+					<p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+					<h3>Honey Almond Granola with Fruits</h3>
+					<p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+					<h3>Belgian Waffle</h3>
+					<p>Vanilla flavored batter with malted flour 7.50</p>
+					<h3>Scrambled eggs</h3>
+					<p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+					<h3>Blueberry Pancakes</h3>
+					<p>With syrup, butter and lots of berries 8.50</p>
+				</div>
+				<div class="menu-image">
+					<img src="img/tablesetting.jpg" alt="tablesetting2">
+				</div>
+			</div>
+			<hr>
+		</div>
+		<div class="section-four" id="contact">
+			<div class="contact">
+				<div class="contact-content">
+					<h1>Contact</h1>
+					<p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+					<p><span>Catering Service, 42nd Living St, 43043 New York, NY</span></p>
+					<p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+				</div>
+				<form>
+					<input type="text" name="name" placeholder="Name" required="required">
+					<input type="number" name="people" placeholder="How many people" required="required">
+					<input type="datetime-local" name="date and time" value="2017-11-16T20:00" required="required">
+					<input type="text" name="message" placeholder="Message\Special requirements" required="required">
+					<button type="submit">SEND MESSAGE</button>
+				</form>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="content-footer">
+				<p>Powered by<a href="#">w3.css</a></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
